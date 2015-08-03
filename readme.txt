@@ -13,7 +13,7 @@ Shipment tracking, notifications + cross selling solution
 
 With Packpin customers can track their goods on the same shop where they bought the product and they are getting email notifications every time a delivery status is changed. It is a completely new way online retailers provide delivery process for their customers.
 
-* Support for 80+ carrier companies.
+* Support for ~100 carrier companies.
 * 80,5% marketing email open rate
 * 60,3% CTR rate
 * Avg. 5,6% order value increase
@@ -24,7 +24,7 @@ Avg 5,6% increase in average order value. This is huge revenue growth by almost 
 With our solution you can automate cross-selling while the package is on the way, automatically inform your customer with shipment delivery and increase your revenue.
 
 * Up/Cross sell add-ons to go with their recent purchase.
-* Support for 70+ carrier companies.
+* Support for ~100 carrier companies.
 * Languages supported: English, Dutch, German, Spanish, Portuguese
 * Automatically track all the shipments in one place.
 * We will auto-detect your carrier and display the results in a user friendly way.
