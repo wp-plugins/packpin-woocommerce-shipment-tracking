@@ -36,7 +36,6 @@ if (!class_exists('PackpinTracking_Front_Shortcode')) {
          */
         public function generate_shortcode()
         {
-            syslog(5, 'PackpinTracking_Front_Shortcode generate_shortcode');
             global $wpdb, $woocommerce;
 
             $h = $_GET['h'];

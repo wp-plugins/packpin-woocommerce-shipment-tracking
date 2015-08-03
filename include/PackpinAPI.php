@@ -105,8 +105,6 @@ class PackpinAPI
         curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
         $response = curl_exec($ch);
-        syslog(5, '$route ' . $route);
-        syslog(5, '$response ' . print_r($response, true));
         $this->_lastStatusCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
         if ($response === false) {
             $this->_throwFatalError(curl_error($ch));

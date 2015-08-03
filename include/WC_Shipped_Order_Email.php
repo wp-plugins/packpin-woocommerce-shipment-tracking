@@ -38,7 +38,6 @@ class WC_Shipped_Order_Email extends WC_Email
 
         //add_action( 'woocommerce_order_status_failed_to_processing_notification',  array( $this, 'trigger' ) );
 
-        syslog(5, 'template_base ' . $this->template_base);
         // Call parent constructor to load any other defaults not explicity defined here
 
         parent::__construct();
@@ -52,9 +51,6 @@ class WC_Shipped_Order_Email extends WC_Email
      */
     public function trigger($order_id)
     {
-
-        syslog(5, 'trigger ' . $order_id);
-
         // bail if no order ID is present
         if (!$order_id)
             return;
@@ -63,8 +59,6 @@ class WC_Shipped_Order_Email extends WC_Email
         $this->object = new WC_Order($order_id);
 
         $this->recipient = $this->object->billing_email;
-
-        syslog(5, 'recipient ' . $this->recipient);
 
         if (!$this->recipient) {
             error_log('No email recipient for WooCommerce Order #' . $order_id);
@@ -78,11 +72,8 @@ class WC_Shipped_Order_Email extends WC_Email
         $this->replace[] = $this->object->get_order_number();
 
         if (!$this->is_enabled() || !$this->get_recipient()) {
-            syslog(5, 'failed ' . $this->recipient);
             return;
         }
-
-        syslog(5, 'should send ' . $this->recipient);
 
         $this->send($this->get_recipient(), $this->get_subject(), $this->get_content(), $this->get_headers(), $this->get_attachments());
     }
