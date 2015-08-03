@@ -1,0 +1,11 @@
+.packpinLogo{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 10px;
+}
+
+img.cs_banner {
+    float: right;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
